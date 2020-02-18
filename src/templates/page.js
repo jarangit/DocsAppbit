@@ -34,15 +34,15 @@ export default ({pageContext}) => {
     
     <Layout>
         <div> {Show()} </div>
-        <LayoutWrapper>
+
         <h2> {pageContext.title} </h2>
         <div dangerouslySetInnerHTML={{__html: pageContext.content}}/>
-    </LayoutWrapper>
+
     </Layout>
    )
 }
 
-// export default PageTemplate;
+
 
 
 

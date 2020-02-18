@@ -3,18 +3,14 @@ import Layout from '../components/Layout/layout'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-
 //Style
 const Img = styled.img`
     width:100%;
  `
-const LayoutWrapper = styled.div`
-    max-width:1064px;
-    margin: 0 auto;
-`
 
 const BlockItem = styled.div`
     padding:15px;
+    margin: 20px 20px 0 0;
     max-width: 300px;
     height: 350px;
     border-radius: 10px;
@@ -22,26 +18,22 @@ const BlockItem = styled.div`
     -moz-box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
     box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
 
+
     ${BlockItem}:hover&{
         background: #e6e6e6;
-        margin-top: -10px;
     }
-
-
 `
 const BlockImgItem = styled.div`
     max-width: 350px;
     height: 170px;
     overflow: hidden;
-
     /* border: 1px solid; */
 `
 
 const GridBlock = styled.div`
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 15px;
-    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-top: 30px; */
 
 `
 
@@ -53,17 +45,10 @@ const LinkTitle = styled(Link)`
 
 `
 
-
 export default ({pageContext}) => {
     const {name, slug, posts} = pageContext
-    // const ShowImg = () => {
-    //     return(
-
-    //     )
-    // }
     return (
      <Layout>
-         <LayoutWrapper>
          <h1>{name}</h1>
          <GridBlock>
              {posts.nodes.map(catItem => (
@@ -72,17 +57,15 @@ export default ({pageContext}) => {
                             <Img src =  {catItem.featuredImage.mediaItemUrl} />
                         </BlockImgItem>
                         <LinkTitle key={catItem.id} to = {decodeURI('docs/'+slug+'/'+catItem.slug)}> <h3 className="entry-title" dangerouslySetInnerHTML= {{__html: catItem.title}}/> </LinkTitle>
-                        <p className="expertStyle" dangerouslySetInnerHTML= {{__html: catItem.excerpt}} />
+                        <div>
+                            <div className="expertStyle" dangerouslySetInnerHTML= {{__html: catItem.excerpt}} />
+                        </div>
                  </BlockItem>
              ))}
          </GridBlock>
-         </LayoutWrapper>
      </Layout>
     )
 }
-
-
-// export default CatTemplate;
 
 
 

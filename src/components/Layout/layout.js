@@ -8,11 +8,14 @@ import styled from "styled-components"
 
 const Column = styled.div`
   display: grid;
-  grid-template-columns: 350px auto ;
+  grid-template-columns: 350px 80%;
   height:100%;
 `
 const Clhild = styled.div`
-  float: left;
+  /* text-align: left; */
+  /* border: 1px solid red; */
+  /* background: white; */
+  /* height: 100%; */
 `
 
 const Layout = ({ children }) => {
@@ -24,7 +27,7 @@ const Layout = ({ children }) => {
         </div>
         <div>
           <MenuTop/>
-          <Clhild className="content">
+          <Clhild >
             {children}
           </Clhild>
         </div>
