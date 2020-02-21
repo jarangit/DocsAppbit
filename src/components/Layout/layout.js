@@ -11,12 +11,12 @@ const Column = styled.div`
   grid-template-columns: 350px 80%;
   height:100%;
 `
-const Clhild = styled.div`
-  /* text-align: left; */
-  /* border: 1px solid red; */
-  /* background: white; */
-  /* height: 100%; */
-`
+// const Clhild = styled.div`
+//   /* text-align: left; */
+//   /* border: 1px solid red; */
+//   /* background: white; */
+//   /* height: 100%; */
+// `
 
 const Layout = ({ children }) => {
   return(
@@ -27,9 +27,9 @@ const Layout = ({ children }) => {
         </div>
         <div>
           <MenuTop/>
-          <Clhild >
+          <div >
             {children}
-          </Clhild>
+          </div>
         </div>
       </Column>
       <Footer/>

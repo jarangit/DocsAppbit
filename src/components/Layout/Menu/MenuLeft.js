@@ -13,13 +13,11 @@ const LinkMenu = styled(Link)`
     display: block;
     color:white;
     text-decoration: none;
-    ${LinkMenu}:hover&{
+    :hover{
         transition: 0.5s;
         background: white;
         color:#1B2B45;
-        border-radius: 20px;
-        /* padding: 0 15px; */
-    
+        border-radius: 20px;    
     }
 `
 const LinkAppbit = styled(Link)`
