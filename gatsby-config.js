@@ -11,7 +11,7 @@ module.exports = {
       options: {
         typeName: `WordPress`,
         fieldName: `wordPress`,
-        url: `http://localhost/jaran/Project/DocAppbit/Backend/graphql`,
+        url: `http://docs.dev-app-bit.com/graphql`,
         // refetchInterval:60
        },
       },
@@ -38,6 +38,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
