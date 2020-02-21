@@ -14,7 +14,7 @@ module.exports = {
       options: {
         typeName: `WordPress`,
         fieldName: `wordPress`,
-        url: process.env.API_URL_PRODUCTION,
+        url: process.env.API_URL_DEVELOP,
         // refetchInterval:60
        },
       },

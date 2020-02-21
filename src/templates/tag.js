@@ -20,9 +20,7 @@ const BlockItem = styled.div`
     -moz-box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
     box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
     overflow: hidden;
-
-
-    ${BlockItem}:hover&{
+    :hover{
         background: #e6e6e6;
         ; */
     }

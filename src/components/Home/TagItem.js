@@ -17,7 +17,7 @@ const DisplayItem = styled.div`
     border-radius: 20px;
     transition: margin 0.3s;
     transition: box-shadow 0.2s;
-    ${DisplayItem}:hover&{
+    :hover{
         margin-top: -1px;
         background:red; 
         box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);

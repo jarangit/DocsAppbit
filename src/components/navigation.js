@@ -18,8 +18,7 @@ line-height:10px;
 const LinkItem = styled(Link)`
   text-decoration:none;
   color: #8f8f8f;
-
-  ${LinkItem}:hover&{
+  :hover{
     color:#1B2B45;
   }
 

@@ -17,9 +17,7 @@ const BlockItem = styled.div`
     -webkit-box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
     -moz-box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
     box-shadow: 4px 4px 19px -2px rgba(0,0,0,0.47);
-
-
-    ${BlockItem}:hover&{
+    :hover{
         background: #e6e6e6;
     }
 `
