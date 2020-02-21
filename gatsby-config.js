@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: '.env'
+})
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -11,7 +14,7 @@ module.exports = {
       options: {
         typeName: `WordPress`,
         fieldName: `wordPress`,
-        url: `http://docs.dev-app-bit.com/graphql`,
+        url: process.env.API_URL_DEVELOP,
         // refetchInterval:60
        },
       },
