@@ -14,7 +14,7 @@ module.exports = {
       options: {
         typeName: `WordPress`,
         fieldName: `wordPress`,
-        url: `http://docs.dev-app-bit.com/graphql`,
+        url: `http://docs-api.dev-app-bit.com/graphql`,
         // refetchInterval:60
        },
       },
