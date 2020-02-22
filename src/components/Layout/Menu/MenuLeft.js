@@ -80,13 +80,13 @@ const MenuLeft = () => {
                             </LinkAppbit>
                 </BlockHeader>
                 {props.wordPress.menu.menuItems.nodes.map(item=>{
-                     const wpUrl = `http://docs.dev-app-bit.com/`
+                     const wpUrl = `http://docs-api.dev-app-bit.com/`
                      const onlyPath = decodeURI(  item.url.replace(wpUrl,``))
                 return(
                     <Block>            
                             <LinkMenu to={`/${onlyPath}/`} > <label for="trigger" > <H4> {item.label} </H4>  </label> </LinkMenu>
                             {item.childItems.nodes.map(child=>{
-                                const wpUrl = `http://docs.dev-app-bit.com/category/`
+                                const wpUrl = `http://docs-api.dev-app-bit.com/category/`
                                 const onlyPath = decodeURI( child.url.replace(wpUrl,``))
                                 return(
                                     <LinkMenu to={`docs/${onlyPath}/`}>
